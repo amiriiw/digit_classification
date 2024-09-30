@@ -48,24 +48,53 @@ The dataset used for training the model can be accessed via this [Dataset](https
 
 ## Installation and Setup
 To use this project, follow these steps:
-1. Clone the repository:
+
+### 1. Clone the repository:
 ```bash
 git clone https://github.com/amiriiw/digit_classification
 cd digit_classification
 ```
 
-2. Install the required libraries:
+### 2. Install the required libraries:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Download and prepare your dataset, ensuring it's structured appropriately for training.
-5. Run the model training script:
+### 3. Setup the database:
+You need to create a MySQL database and configure the connection settings.
+
+1. **Install MySQL**: Make sure MySQL is installed and running on your system. You can download it from [here](https://dev.mysql.com/downloads/installer/).
+   
+2. **Create a new MySQL database**:  
+- Open your MySQL shell or MySQL Workbench and run the following commands to create a new database:
+```sql
+CREATE DATABASE digit_classification;
+```
+
+3. **Configure your MySQL connection**:  
+- The script `digit_classification_detector.py` is configured to connect to a MySQL database using the following settings:
+```python
+host='localhost',
+user='root',
+password='10011110',
+database='digit_classification'
+```
+- Update these values in the script if your MySQL settings are different (e.g., different username, password, or database name).
+
+4. **Run the prediction script**: The first time you run the script, it will automatically create the necessary tables in the database.
+```bash
+python digit_classification_detector.py
+```
+
+### 4. Prepare the dataset:
+Download and prepare your dataset, ensuring it's structured appropriately for training (folders named `0` to `9`, each containing respective digit images).
+
+### 5. Run the model training script:
 ```bash
 python digit_classification_model_trainer.py
 ```
 
-6. Use the trained model to predict digits from new images:
+### 6. Use the trained model to predict digits from new images:
 ```bash
 python digit_classification_detector.py
 ```
