@@ -75,8 +75,8 @@ CREATE DATABASE digit_classification;
 - The script `digit_classification_detector.py` is configured to connect to a MySQL database using the following settings:
 ```python
 host='localhost',
-user='root',
-password='10011110',
+user='username',
+password='password',
 database='digit_classification'
 ```
 - Update these values in the script if your MySQL settings are different (e.g., different username, password, or database name).
