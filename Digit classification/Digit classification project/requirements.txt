@@ -1,0 +1,6 @@
+os
+numpy
+sklearn
+pymysql
+tensorflow
+mysql-connector-python
