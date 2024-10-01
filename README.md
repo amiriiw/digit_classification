@@ -1,10 +1,12 @@
 # Digit Classification Project
 Welcome to the **Digit Classification Project**! This project focuses on training a model to classify handwritten digits and using the trained model to predict digits from new images.
 
+```plaintext
 Digit classification/         
 ├── digit_classification_model_trainer.py
 ├── digit_classification_detector.py
 ├── requirements.txt        
+```
 
 ## Overview
 This project consists of two main components:
