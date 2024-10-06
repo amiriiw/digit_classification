@@ -60,6 +60,8 @@ To use this project, follow these steps:
 ```bash
 git clone https://github.com/amiriiw/digit_classification
 cd digit_classification
+cd Digit/ classification
+cd Digit/ classification/ project
 ```
 
 ### 2. Install the required libraries:
