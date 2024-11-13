@@ -1,0 +1,6 @@
+os
+numpy
+dotenv
+sklearn
+psycopg2
+tensorflow
