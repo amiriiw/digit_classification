@@ -10,9 +10,10 @@
 - [File Structure](#file-structure)
 - [Dependencies](#dependencies)
 - [Environment Variables](#environment-variables)
-- [Documentation](#documentation)
 - [Dataset](#dataset)
 - [License](#license)
+
+---
 
 ## Features
 
@@ -20,6 +21,8 @@
 - **Result Storage**: Saves classification results (predicted digit and confidence) in a PostgreSQL database.
 - **Image Processing and Storage**: Processes images and moves classified images to their respective folders.
 - **Data Augmentation**: Applies data augmentation to improve model performance.
+
+---
 
 ## Installation
 
@@ -75,6 +78,8 @@ python3 detect.py
 
 Enter the path to the image or folder when prompted to start the classification process.
 
+---
+
 ## File Structure
 
 ```
@@ -86,6 +91,8 @@ Digit-classification/
 ├── dataset/                   # Dataset folder
 └── README.md                  # Project documentation
 ```
+
+---
 
 ## Dependencies
 
@@ -102,6 +109,8 @@ Install dependencies with:
 pip3 install -r requirements.txt
 ```
 
+---
+
 ## Environment Variables
 
 Configure the database connection and model path in the `.env` file:
@@ -115,21 +124,15 @@ DB_PORT="port"
 MODEL_PATH="model file path"
 ```
 
-## Documentation
-
-### Class Descriptions
-
-- **DatabaseHandler**: Manages the database connection and operations.
-- **ImageClassifier**: Processes and classifies images.
-- **DataLoader**: Loads and preprocesses training data.
-- **DigitClassifierModel**: Defines the CNN model for digit classification.
-- **DigitClassifier**: Main class for model training and evaluation.
+---
 
 ## Dataset
 
 Download the training dataset from the following link and place it in the `dataset` folder:
 
 [Download Dataset](https://drive.google.com/file/d/1-172cX2BuWR_zxNXYp9LfC0GVl-An79l/view?usp=drive_link)
+
+---
 
 ## License
 
