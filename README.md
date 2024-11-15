@@ -9,7 +9,6 @@
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Dependencies](#dependencies)
-- [Environment Variables](#environment-variables)
 - [Dataset](#dataset)
 - [License](#license)
 
@@ -28,30 +27,36 @@
 
 Follow these steps to set up the project:
 
-### Clone the repository:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/amiriiw/digit_classification
+   cd digit_classification
+   cd Digit-classification
+   ```
 
-```bash
-git clone https://github.com/amiriiw/digit_classification
-cd digit_classification
-cd Digit-classification
-```
+ 2. **Create a virtual environment**:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scriptsctivate`
+    ```
+    
+3. **Install dependencies**:
+   ```bash
+   pip3 install -r requirements.txt
+   ```
 
-### Create a virtual environment:
+4. **Set environment variables**:
+   Create a `.env` file with the following variables:
+   ```plaintext
+   DB_NAME="database name"
+   DB_USER="username"
+   DB_PASSWORD="password"
+   DB_HOST="host address"
+   DB_PORT="port"
+   MODEL_PATH="model file path"
+   ```
 
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scriptsctivate`
-```
-
-### Install dependencies:
-
-```bash
-pip3 install -r requirements.txt
-```
-
-### Set environment variables:
-
-Configure the `.env` file with your database and model information.
+---
 
 ## Usage
 
@@ -107,21 +112,6 @@ Install dependencies with:
 
 ```bash
 pip3 install -r requirements.txt
-```
-
----
-
-## Environment Variables
-
-Configure the database connection and model path in the `.env` file:
-
-```
-DB_NAME="database name"
-DB_USER="username"
-DB_PASSWORD="password"
-DB_HOST="host address"
-DB_PORT="port"
-MODEL_PATH="model file path"
 ```
 
 ---
