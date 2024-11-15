@@ -103,10 +103,10 @@ Digit-classification/
 
 This project requires the following libraries:
 
-- **TensorFlow**: For deep learning model development and training.
-- **NumPy**: For data processing and numerical operations.
-- **psycopg2**: For connecting to PostgreSQL databases.
-- **python-dotenv**: For managing environment variables.
+- **[TensorFlow](https://www.tensorflow.org/)**: For deep learning model development and training.
+- **[NumPy](https://numpy.org/)**: For data processing and numerical operations.
+- **[psycopg2](https://www.postgresql.org/)**: For connecting to PostgreSQL databases.
+- **[python-dotenv](https://pypi.org/project/python-dotenv/)**: For managing environment variables.
 
 Install dependencies with:
 
